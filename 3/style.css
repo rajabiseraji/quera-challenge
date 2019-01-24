@@ -1,0 +1,92 @@
+#container {
+    background: #D5D8DC;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    top: 100px;
+    left: 100px;
+}
+
+.right {
+    background: #2ECC71;
+    position: absolute;
+    z-index: 0;
+}
+
+.right:hover ~ .right, .right:hover {
+    z-index: 6;
+}
+
+.left:hover~.left,
+.left:hover {
+    z-index: 6;
+}
+
+.right:nth-of-type(even) {
+    width: 320px;
+    height: 40px;
+}
+
+.right:nth-of-type(odd) {
+    width: 40px;
+    height: 320px;
+}
+.left:nth-of-type(even) {
+    width: 320px;
+    height: 40px;
+}
+
+.left:nth-of-type(odd) {
+    width: 40px;
+    height: 320px;
+}
+
+.right:nth-of-type(1) {
+    top: 0;
+    right: 0;
+}
+
+.right:nth-of-type(2) {
+    right: 0;
+    top: 0;
+}
+
+.right:nth-of-type(3) {
+    top: 0;
+    left: 80px;
+    z-index: 5;
+}
+
+.right:nth-of-type(4) {
+    right: 0;
+    bottom: 80px;
+}
+
+
+.left {
+    background: #E74C3C;
+    position: absolute;
+    z-index: 0;
+}
+
+.left:nth-of-type(8) {
+    top: 80px;
+    left: 0;
+}
+
+.left:nth-of-type(7) {
+    right: 80px;
+    top: 80px;
+    z-index: 2;
+}
+
+.left:nth-of-type(6) {
+    bottom: 0;
+    left: 0;
+}
+
+.left:nth-of-type(5) {
+    bottom: 0;
+    left: 0;
+}
+
